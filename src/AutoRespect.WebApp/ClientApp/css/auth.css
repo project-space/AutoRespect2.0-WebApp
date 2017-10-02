@@ -1,0 +1,72 @@
+﻿html, body {
+    font-family: 'Segoe UI';
+
+    padding: 0px;
+    margin: 0px;
+
+    width: 100%;
+    height: 100%;
+}
+
+.auth-container {
+    position: fixed;
+    
+    width: 100%;
+    height: 100%;
+
+    background-image: url('../images/authorization-background-2800x1874.jpg');
+    background-size: cover;
+}
+
+.auth-container * {
+    padding: 5px;
+}
+
+.auth-form {
+    position: absolute;
+    margin: auto;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 400px;
+    height: 400px;
+
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.auth-form header {
+    color: white;
+    text-align: center;
+}
+
+.auth-form input {
+    background: rgba(0, 0, 0, 0.6);
+    color: white;
+    font-size: 20px;
+
+    border: none;
+    padding-left: 15px;
+
+    display: flex;
+    margin: auto;
+
+    width: 90%;
+    height: 40px;
+}
+
+.auth-form button {
+    display: flex;
+    margin: auto;
+
+    margin-top: 20px;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    align-content: center;
+
+    padding: 5px 25px 5px 25px;
+    width: 40%;
+    border:none;
+    background: rgba(0, 0, 0, 0.6);
+}

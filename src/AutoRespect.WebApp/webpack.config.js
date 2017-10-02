@@ -13,12 +13,12 @@ module.exports = (env) => {
         resolve: { extensions: ['.js', '.jsx', '.ts', '.tsx'] },
         output: {
             filename: '[name].js',
-            publicPath: 'dist/' // Webpack dev middleware, if enabled, handles requests for this URL prefix
+            publicPath: './' // Webpack dev middleware, if enabled, handles requests for this URL prefix
         },
         module: {
             rules: [
                 { test: /\.tsx?$/, include: /ClientApp/, use: 'awesome-typescript-loader?silent=true' },
-                { test: /\.(png|jpg|jpeg|gif|svg)$/, use: [{loader: 'url-loader', query: { limit: 25000, name: '[path][name].[ext]?[hash]' } }] }
+                { test: /\.(png|jpg|jpeg|gif|svg)$/, use: [{loader: 'url-loader', query: { limit: 25000, name: '[name].[ext]?[hash]' } }] }
             ]
         },
         plugins: [new CheckerPlugin()]
@@ -35,7 +35,7 @@ module.exports = (env) => {
         },
         output: { path: path.join(__dirname, clientBundleOutputDir) },
         plugins: [
-            new ExtractTextPlugin('site.css'),
+            new ExtractTextPlugin('[name].css'),
             new webpack.DllReferencePlugin({
                 context: __dirname,
                 manifest: require('./wwwroot/dist/vendor-manifest.json')
