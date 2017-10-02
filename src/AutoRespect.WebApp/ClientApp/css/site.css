@@ -64,3 +64,27 @@
         text-overflow: ellipsis;
     }
 }
+
+html, body {
+    padding: 0px;
+    margin: 0px;
+
+    width: 100%;
+    height: 100%;
+}
+
+.container-authorization {
+    position: fixed;
+    
+    width: 100%;
+    height: 100%;
+
+    background-image: url('../dist/images/authorization-background-2800x1874.jpg');
+    background-size: cover;
+}
+
+.authorization-form {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
