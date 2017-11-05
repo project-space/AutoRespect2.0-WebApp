@@ -1,0 +1,6 @@
+[submodule "submodules/AutoRespect2.0-Infrastructure"]
+	path = submodules/AutoRespect2.0-Infrastructure
+	url = https://github.com/project-space/AutoRespect2.0-Infrastructure.git
+[submodule "submodules/AutoRespect2.0-Shared"]
+	path = submodules/AutoRespect2.0-Shared
+	url = https://github.com/project-space/AutoRespect2.0-Shared.git
