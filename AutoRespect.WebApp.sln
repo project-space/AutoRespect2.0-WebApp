@@ -7,6 +7,32 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{9E5B98FD-00A
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AutoRespect.WebApp", "src\AutoRespect.WebApp\AutoRespect.WebApp.csproj", "{078ABA75-5DB1-4538-AA89-6AC0E976D480}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "libs", "libs", "{6CF807C7-941B-426E-BED1-3545715741E1}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "shared", "shared", "{92EE84A9-B858-4CA4-9AF5-03B301320D7F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "infrastructure", "infrastructure", "{2829EB4F-0B61-4EA4-A8B6-94C7241F9345}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AutoRespect.Infrastructure.DI.Design", "submodules\AutoRespect2.0-Infrastructure\src\AutoRespect.Infrastructure.DI.Design\AutoRespect.Infrastructure.DI.Design.csproj", "{F1DB48C3-6CE0-4835-9781-3FF632EDAC56}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AutoRespect.Infrastructure.DI", "submodules\AutoRespect2.0-Infrastructure\src\AutoRespect.Infrastructure.DI\AutoRespect.Infrastructure.DI.csproj", "{D128C3D6-40AF-4527-B576-2E9A608A605C}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AutoRespect.Infrastructure.Api.Design", "submodules\AutoRespect2.0-Infrastructure\src\AutoRespect.Infrastructure.Api.Design\AutoRespect.Infrastructure.Api.Design.csproj", "{EC3190BC-74AC-4399-B922-DAB4CDC926D8}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AutoRespect.Infrastructure.Api", "submodules\AutoRespect2.0-Infrastructure\src\AutoRespect.Infrastructure.Api\AutoRespect.Infrastructure.Api.csproj", "{08F63564-08A6-43A3-A55A-20D7ECBFF779}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AutoRespect.Infrastructure.Errors.Design", "submodules\AutoRespect2.0-Infrastructure\src\AutoRespect.Infrastructure.Errors.Design\AutoRespect.Infrastructure.Errors.Design.csproj", "{940B80F8-660C-4E74-A37B-3A68A5FE1CF5}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AutoRespect.Infrastructure.Errors", "submodules\AutoRespect2.0-Infrastructure\src\AutoRespect.Infrastructure.Errors\AutoRespect.Infrastructure.Errors.csproj", "{B8DE307F-6347-40C6-A89E-5B182AE44588}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AutoRespect.AuthorizationServer.Api", "submodules\AutoRespect2.0-Shared\src\AutoRespect.AuthorizationServer.Api\AutoRespect.AuthorizationServer.Api.csproj", "{B6C0B18E-E417-4CD3-89C1-B94E646B52DE}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AutoRespect.AuthorizationServer.DataTransfer", "submodules\AutoRespect2.0-Shared\src\AutoRespect.AuthorizationServer.DataTransfer\AutoRespect.AuthorizationServer.DataTransfer.csproj", "{D23ED7C4-0ADF-4022-B7FB-91A06396A12D}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AutoRespect.Infrastructure.ServiceDiscovery.Design", "submodules\AutoRespect2.0-Infrastructure\src\AutoRespect.Infrastructure.ServiceDiscovery.Design\AutoRespect.Infrastructure.ServiceDiscovery.Design.csproj", "{0C6A5768-05F0-4032-979F-0653287374EF}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AutoRespect.Infrastructure.ServiceDiscovery", "submodules\AutoRespect2.0-Infrastructure\src\AutoRespect.Infrastructure.ServiceDiscovery\AutoRespect.Infrastructure.ServiceDiscovery.csproj", "{B799ECF2-9687-48CC-9626-0EB9B9696FA1}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -17,12 +43,64 @@ Global
 		{078ABA75-5DB1-4538-AA89-6AC0E976D480}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{078ABA75-5DB1-4538-AA89-6AC0E976D480}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{078ABA75-5DB1-4538-AA89-6AC0E976D480}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F1DB48C3-6CE0-4835-9781-3FF632EDAC56}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F1DB48C3-6CE0-4835-9781-3FF632EDAC56}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F1DB48C3-6CE0-4835-9781-3FF632EDAC56}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F1DB48C3-6CE0-4835-9781-3FF632EDAC56}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D128C3D6-40AF-4527-B576-2E9A608A605C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D128C3D6-40AF-4527-B576-2E9A608A605C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D128C3D6-40AF-4527-B576-2E9A608A605C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D128C3D6-40AF-4527-B576-2E9A608A605C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EC3190BC-74AC-4399-B922-DAB4CDC926D8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EC3190BC-74AC-4399-B922-DAB4CDC926D8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EC3190BC-74AC-4399-B922-DAB4CDC926D8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EC3190BC-74AC-4399-B922-DAB4CDC926D8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{08F63564-08A6-43A3-A55A-20D7ECBFF779}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{08F63564-08A6-43A3-A55A-20D7ECBFF779}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{08F63564-08A6-43A3-A55A-20D7ECBFF779}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{08F63564-08A6-43A3-A55A-20D7ECBFF779}.Release|Any CPU.Build.0 = Release|Any CPU
+		{940B80F8-660C-4E74-A37B-3A68A5FE1CF5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{940B80F8-660C-4E74-A37B-3A68A5FE1CF5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{940B80F8-660C-4E74-A37B-3A68A5FE1CF5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{940B80F8-660C-4E74-A37B-3A68A5FE1CF5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B8DE307F-6347-40C6-A89E-5B182AE44588}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B8DE307F-6347-40C6-A89E-5B182AE44588}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B8DE307F-6347-40C6-A89E-5B182AE44588}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B8DE307F-6347-40C6-A89E-5B182AE44588}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B6C0B18E-E417-4CD3-89C1-B94E646B52DE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B6C0B18E-E417-4CD3-89C1-B94E646B52DE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B6C0B18E-E417-4CD3-89C1-B94E646B52DE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B6C0B18E-E417-4CD3-89C1-B94E646B52DE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D23ED7C4-0ADF-4022-B7FB-91A06396A12D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D23ED7C4-0ADF-4022-B7FB-91A06396A12D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D23ED7C4-0ADF-4022-B7FB-91A06396A12D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D23ED7C4-0ADF-4022-B7FB-91A06396A12D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0C6A5768-05F0-4032-979F-0653287374EF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0C6A5768-05F0-4032-979F-0653287374EF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0C6A5768-05F0-4032-979F-0653287374EF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0C6A5768-05F0-4032-979F-0653287374EF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B799ECF2-9687-48CC-9626-0EB9B9696FA1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B799ECF2-9687-48CC-9626-0EB9B9696FA1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B799ECF2-9687-48CC-9626-0EB9B9696FA1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B799ECF2-9687-48CC-9626-0EB9B9696FA1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{078ABA75-5DB1-4538-AA89-6AC0E976D480} = {9E5B98FD-00A1-44B8-8343-51B0710A5D31}
+		{92EE84A9-B858-4CA4-9AF5-03B301320D7F} = {6CF807C7-941B-426E-BED1-3545715741E1}
+		{2829EB4F-0B61-4EA4-A8B6-94C7241F9345} = {6CF807C7-941B-426E-BED1-3545715741E1}
+		{F1DB48C3-6CE0-4835-9781-3FF632EDAC56} = {2829EB4F-0B61-4EA4-A8B6-94C7241F9345}
+		{D128C3D6-40AF-4527-B576-2E9A608A605C} = {2829EB4F-0B61-4EA4-A8B6-94C7241F9345}
+		{EC3190BC-74AC-4399-B922-DAB4CDC926D8} = {2829EB4F-0B61-4EA4-A8B6-94C7241F9345}
+		{08F63564-08A6-43A3-A55A-20D7ECBFF779} = {2829EB4F-0B61-4EA4-A8B6-94C7241F9345}
+		{940B80F8-660C-4E74-A37B-3A68A5FE1CF5} = {2829EB4F-0B61-4EA4-A8B6-94C7241F9345}
+		{B8DE307F-6347-40C6-A89E-5B182AE44588} = {2829EB4F-0B61-4EA4-A8B6-94C7241F9345}
+		{B6C0B18E-E417-4CD3-89C1-B94E646B52DE} = {92EE84A9-B858-4CA4-9AF5-03B301320D7F}
+		{D23ED7C4-0ADF-4022-B7FB-91A06396A12D} = {92EE84A9-B858-4CA4-9AF5-03B301320D7F}
+		{0C6A5768-05F0-4032-979F-0653287374EF} = {2829EB4F-0B61-4EA4-A8B6-94C7241F9345}
+		{B799ECF2-9687-48CC-9626-0EB9B9696FA1} = {2829EB4F-0B61-4EA4-A8B6-94C7241F9345}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {E314CCA5-73B4-43DE-A2B9-727F357C515B}

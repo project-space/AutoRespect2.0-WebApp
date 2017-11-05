@@ -12,4 +12,17 @@
     <DotNetCliToolReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Tools" Version="2.0.0" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\..\submodules\AutoRespect2.0-Infrastructure\src\AutoRespect.Infrastructure.Api.Design\AutoRespect.Infrastructure.Api.Design.csproj" />
+    <ProjectReference Include="..\..\submodules\AutoRespect2.0-Infrastructure\src\AutoRespect.Infrastructure.Api\AutoRespect.Infrastructure.Api.csproj" />
+    <ProjectReference Include="..\..\submodules\AutoRespect2.0-Infrastructure\src\AutoRespect.Infrastructure.DI.Design\AutoRespect.Infrastructure.DI.Design.csproj" />
+    <ProjectReference Include="..\..\submodules\AutoRespect2.0-Infrastructure\src\AutoRespect.Infrastructure.DI\AutoRespect.Infrastructure.DI.csproj" />
+    <ProjectReference Include="..\..\submodules\AutoRespect2.0-Infrastructure\src\AutoRespect.Infrastructure.Errors.Design\AutoRespect.Infrastructure.Errors.Design.csproj" />
+    <ProjectReference Include="..\..\submodules\AutoRespect2.0-Infrastructure\src\AutoRespect.Infrastructure.Errors\AutoRespect.Infrastructure.Errors.csproj" />
+    <ProjectReference Include="..\..\submodules\AutoRespect2.0-Infrastructure\src\AutoRespect.Infrastructure.ServiceDiscovery.Design\AutoRespect.Infrastructure.ServiceDiscovery.Design.csproj" />
+    <ProjectReference Include="..\..\submodules\AutoRespect2.0-Infrastructure\src\AutoRespect.Infrastructure.ServiceDiscovery\AutoRespect.Infrastructure.ServiceDiscovery.csproj" />
+    <ProjectReference Include="..\..\submodules\AutoRespect2.0-Shared\src\AutoRespect.AuthorizationServer.Api\AutoRespect.AuthorizationServer.Api.csproj" />
+    <ProjectReference Include="..\..\submodules\AutoRespect2.0-Shared\src\AutoRespect.AuthorizationServer.DataTransfer\AutoRespect.AuthorizationServer.DataTransfer.csproj" />
+  </ItemGroup>
+
 </Project>
