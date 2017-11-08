@@ -1,5 +1,6 @@
 ﻿using System;
 using AutoRespect.Infrastructure.DI;
+using AutoRespect.Infrastructure.OAuth;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
@@ -19,7 +20,8 @@ namespace AutoRespect.WebApp
         public IServiceProvider ConfigureServices(IServiceCollection services)
         {
             services.AddMvc();
-
+            services.AddAutoRespectJwtAuthentication();
+            
             return DIAttributeInstaller.Install(services);
         }
 
@@ -27,22 +29,24 @@ namespace AutoRespect.WebApp
         {
             if (env.IsDevelopment())
             {
-                app.UseDeveloperExceptionPage();
-                app.UseBrowserLink();
+                app
+                    .UseDeveloperExceptionPage()
+                    .UseBrowserLink();
             }
             else
             {
                 app.UseExceptionHandler("/Home/Error");
             }
 
-            app.UseStaticFiles();
-
-            app.UseMvc(routes =>
-            {
-                routes.MapRoute(
-                    name: "default",
-                    template: "{controller=Home}/{action=Index}/{id?}");
-            });
+            app
+                .UseStaticFiles()
+                .UseAutoRespectJwtAuthentication()
+                .UseMvc(routes =>
+                {
+                    routes.MapRoute(
+                        name: "default",
+                        template: "{controller=Home}/{action=Index}/{id?}");
+                });
         }
     }
 }

@@ -5,7 +5,7 @@ VisualStudioVersion = 15.0.26730.16
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{9E5B98FD-00A1-44B8-8343-51B0710A5D31}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AutoRespect.WebApp", "src\AutoRespect.WebApp\AutoRespect.WebApp.csproj", "{078ABA75-5DB1-4538-AA89-6AC0E976D480}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AutoRespect.WebApp", "src\AutoRespect.WebApp\AutoRespect.WebApp.csproj", "{078ABA75-5DB1-4538-AA89-6AC0E976D480}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "libs", "libs", "{6CF807C7-941B-426E-BED1-3545715741E1}"
 EndProject
@@ -32,6 +32,12 @@ EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AutoRespect.Infrastructure.ServiceDiscovery.Design", "submodules\AutoRespect2.0-Infrastructure\src\AutoRespect.Infrastructure.ServiceDiscovery.Design\AutoRespect.Infrastructure.ServiceDiscovery.Design.csproj", "{0C6A5768-05F0-4032-979F-0653287374EF}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AutoRespect.Infrastructure.ServiceDiscovery", "submodules\AutoRespect2.0-Infrastructure\src\AutoRespect.Infrastructure.ServiceDiscovery\AutoRespect.Infrastructure.ServiceDiscovery.csproj", "{B799ECF2-9687-48CC-9626-0EB9B9696FA1}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AutoRespect.Infrastructure.OAuth.Design", "submodules\AutoRespect2.0-Infrastructure\src\AutoRespect.Infrastructure.OAuth.Design\AutoRespect.Infrastructure.OAuth.Design.csproj", "{73D9DCBB-27E0-4668-B587-BF75F8B57A06}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AutoRespect.Infrastructure.OAuth", "submodules\AutoRespect2.0-Infrastructure\src\AutoRespect.Infrastructure.OAuth\AutoRespect.Infrastructure.OAuth.csproj", "{40DA5876-FE2B-4D96-85B7-A5EF54086E40}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AutoRespect.Infrastructure.OAuth.Jwt", "submodules\AutoRespect2.0-Infrastructure\src\AutoRespect.Infrastructure.OAuth.Jwt\AutoRespect.Infrastructure.OAuth.Jwt.csproj", "{C97AF212-A9AB-409D-BF87-8977C6C2E8E7}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -83,6 +89,18 @@ Global
 		{B799ECF2-9687-48CC-9626-0EB9B9696FA1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B799ECF2-9687-48CC-9626-0EB9B9696FA1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B799ECF2-9687-48CC-9626-0EB9B9696FA1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{73D9DCBB-27E0-4668-B587-BF75F8B57A06}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{73D9DCBB-27E0-4668-B587-BF75F8B57A06}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{73D9DCBB-27E0-4668-B587-BF75F8B57A06}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{73D9DCBB-27E0-4668-B587-BF75F8B57A06}.Release|Any CPU.Build.0 = Release|Any CPU
+		{40DA5876-FE2B-4D96-85B7-A5EF54086E40}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{40DA5876-FE2B-4D96-85B7-A5EF54086E40}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{40DA5876-FE2B-4D96-85B7-A5EF54086E40}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{40DA5876-FE2B-4D96-85B7-A5EF54086E40}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C97AF212-A9AB-409D-BF87-8977C6C2E8E7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C97AF212-A9AB-409D-BF87-8977C6C2E8E7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C97AF212-A9AB-409D-BF87-8977C6C2E8E7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C97AF212-A9AB-409D-BF87-8977C6C2E8E7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -101,6 +119,9 @@ Global
 		{D23ED7C4-0ADF-4022-B7FB-91A06396A12D} = {92EE84A9-B858-4CA4-9AF5-03B301320D7F}
 		{0C6A5768-05F0-4032-979F-0653287374EF} = {2829EB4F-0B61-4EA4-A8B6-94C7241F9345}
 		{B799ECF2-9687-48CC-9626-0EB9B9696FA1} = {2829EB4F-0B61-4EA4-A8B6-94C7241F9345}
+		{73D9DCBB-27E0-4668-B587-BF75F8B57A06} = {2829EB4F-0B61-4EA4-A8B6-94C7241F9345}
+		{40DA5876-FE2B-4D96-85B7-A5EF54086E40} = {2829EB4F-0B61-4EA4-A8B6-94C7241F9345}
+		{C97AF212-A9AB-409D-BF87-8977C6C2E8E7} = {2829EB4F-0B61-4EA4-A8B6-94C7241F9345}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {E314CCA5-73B4-43DE-A2B9-727F357C515B}

@@ -19,6 +19,9 @@
     <ProjectReference Include="..\..\submodules\AutoRespect2.0-Infrastructure\src\AutoRespect.Infrastructure.DI\AutoRespect.Infrastructure.DI.csproj" />
     <ProjectReference Include="..\..\submodules\AutoRespect2.0-Infrastructure\src\AutoRespect.Infrastructure.Errors.Design\AutoRespect.Infrastructure.Errors.Design.csproj" />
     <ProjectReference Include="..\..\submodules\AutoRespect2.0-Infrastructure\src\AutoRespect.Infrastructure.Errors\AutoRespect.Infrastructure.Errors.csproj" />
+    <ProjectReference Include="..\..\submodules\AutoRespect2.0-Infrastructure\src\AutoRespect.Infrastructure.OAuth.Design\AutoRespect.Infrastructure.OAuth.Design.csproj" />
+    <ProjectReference Include="..\..\submodules\AutoRespect2.0-Infrastructure\src\AutoRespect.Infrastructure.OAuth.Jwt\AutoRespect.Infrastructure.OAuth.Jwt.csproj" />
+    <ProjectReference Include="..\..\submodules\AutoRespect2.0-Infrastructure\src\AutoRespect.Infrastructure.OAuth\AutoRespect.Infrastructure.OAuth.csproj" />
     <ProjectReference Include="..\..\submodules\AutoRespect2.0-Infrastructure\src\AutoRespect.Infrastructure.ServiceDiscovery.Design\AutoRespect.Infrastructure.ServiceDiscovery.Design.csproj" />
     <ProjectReference Include="..\..\submodules\AutoRespect2.0-Infrastructure\src\AutoRespect.Infrastructure.ServiceDiscovery\AutoRespect.Infrastructure.ServiceDiscovery.csproj" />
     <ProjectReference Include="..\..\submodules\AutoRespect2.0-Shared\src\AutoRespect.AuthorizationServer.Api\AutoRespect.AuthorizationServer.Api.csproj" />
