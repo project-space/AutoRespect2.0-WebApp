@@ -5,6 +5,10 @@ namespace AutoRespect.WebApp.Components
 {
     public class Header : ViewComponent
     {
+        public Header()
+        {
+        }
+
         public async Task<IViewComponentResult> InvokeAsync()
         {
             return View();

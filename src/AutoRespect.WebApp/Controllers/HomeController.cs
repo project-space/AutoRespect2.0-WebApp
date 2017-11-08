@@ -1,5 +1,4 @@
-﻿using Microsoft.AspNetCore.Authorization;
-using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Mvc;
 
 namespace AutoRespect.WebApp.Controllers
 {
@@ -8,12 +7,6 @@ namespace AutoRespect.WebApp.Controllers
         public IActionResult Index()
         {
             return View();
-        }
-
-        [AllowAnonymous]
-        public IActionResult Authorize()
-        {
-            return Content("");
         }
     }
 }
