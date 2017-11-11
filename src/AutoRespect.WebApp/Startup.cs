@@ -1,8 +1,10 @@
 ﻿using System;
 using AutoRespect.Infrastructure.DI;
 using AutoRespect.Infrastructure.OAuth;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
+using Microsoft.AspNetCore.Mvc.Authorization;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 
@@ -19,9 +21,17 @@ namespace AutoRespect.WebApp
 
         public IServiceProvider ConfigureServices(IServiceCollection services)
         {
-            services.AddMvc();
+            services.AddMvc(options =>
+            {
+                var policy = new AuthorizationPolicyBuilder()
+                    .RequireAuthenticatedUser()
+                    .Build();
+
+                options.Filters.Add(new AuthorizeFilter(policy));
+            });
+
             services.AddAutoRespectJwtAuthentication();
-            
+
             return DIAttributeInstaller.Install(services);
         }
 
