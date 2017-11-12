@@ -16,12 +16,13 @@
             <ul class="nav navbar-nav">
                 @if (accountContext.IsAuthorized)
                 {
-                    <li><span>Wellcome, @accountContext.Login! <span class="glyphicon-user"></span></span></li>
+                    <li><a>Wellcome, @accountContext.Login!</a></li>
+                    <li><a asp-controller="Account" asp-action="SignOut">Sign out</a></li>
                 }
                 else
                 {
-                    <li><a asp-controller="Account" asp-action="SignIn">Sign In</a></li>
-                    <li><a asp-controller="Account" asp-action="SignUp">Sign Up</a></li>
+                    <li><a asp-controller="Account" asp-action="SignIn">Sign in</a></li>
+                    <li><a asp-controller="Account" asp-action="SignUp">Sign up</a></li>
                 }
             </ul>
         </div>

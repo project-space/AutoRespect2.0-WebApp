@@ -28,4 +28,8 @@
     <ProjectReference Include="..\..\submodules\AutoRespect2.0-Shared\src\AutoRespect.AuthorizationServer.DataTransfer\AutoRespect.AuthorizationServer.DataTransfer.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Models\" />
+  </ItemGroup>
+
 </Project>

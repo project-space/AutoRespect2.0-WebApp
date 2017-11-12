@@ -1,3 +1,35 @@
-﻿@{
+﻿@using AutoRespect.Infrastructure.Errors.Design;
+@model List<E>
+@{
     ViewData["Title"] = "AutoRespect 2.0 - Sign in";
 }
+
+<hr />
+<div class="row">
+    <div class="col-lg-4">
+        <form asp-controller="Account"
+              asp-action="SignIn"
+              asp-antiforgery="true"
+              method="post"
+              class="stack-vertical">
+
+            <input class="form-control" placeholder="login" type="text" name="Login" />
+            <input class="form-control top-10" placeholder="password" name="Password" type="password" />
+            <input class="form-control top-10 btn btn-success" type="submit" value="Sign In" />
+        </form>
+    </div>
+    <div class="col-lg-8">
+        <div>
+            @if (Model != null && Model.Any())
+            {
+                @foreach (var error in Model)
+                {
+                    <div class="row alert alert-danger">
+                        @error.Id : @error.Description
+                    </div>
+                    <hr />
+                }
+            }
+        </div>
+    </div>
+</div>
